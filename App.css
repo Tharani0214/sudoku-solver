@@ -1,0 +1,96 @@
+.app {
+  text-align: center;
+  font-family: 'Arial', sans-serif; /* Add a nicer font */
+  background-color: #f5f5f5; /* Light background for contrast */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.sudoku-grid {
+  display: grid;
+  grid-template-columns: repeat(9, 40px);
+  grid-template-rows: repeat(9, 40px);
+  gap: 5px;
+  margin: 20px auto; /* Center the grid */
+  justify-content: center; /* Center align the grid */
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border: 1px solid #999; /* Border for cells */
+  border-radius: 5px; /* Create rounded corners for cells */
+}
+
+.cell:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #007bff; /* Highlight border when focused */
+}
+
+.buttons {
+  margin: 20px;
+  display: flex;
+  justify-content: center; /* Center align buttons */
+}
+
+.button {
+  margin: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none; /* Remove default button border */
+  border-radius: 5px; /* Rounded corners */
+  color: white; /* Text color */
+  font-weight: bold;  /* Bold text */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.button.validate {
+  background-color: #67ec86; /* Green for validate */
+}
+
+.button.solve {
+  background-color: #6881d8; /* Blue for solve */
+}
+
+.button.clear {
+  background-color: #e27d87; /* Red for clear */
+}
+
+.button.hint {
+  background-color: #f1da95; /* Yellow for hints */
+}
+
+.button:hover {
+  opacity: 0.8; /* Reduce opacity on hover */
+}
+
+.error {
+  color: red;
+  margin-top: 10px; /* Space above error message */
+}
+
+.message {
+  color: green;
+  margin-top: 10px; /* Space above success message */
+}
+
+.hints {
+  margin-top: 20px;
+}
+
+.hints h3 {
+  margin: 0 0 10px;
+}
+
+.hints ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.hints li {
+  margin: 5px 0;
+  font-weight: bold; /* Bold for emphasis */
+}
